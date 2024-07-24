@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+  
+  
+    <link rel="shortcut icon" href="static/css/favicon.ico" />
+
+  <!-- CSS Interno para novos IDs --->
+  <style>
+    html,body{
+    min-height: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: 0px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    background-image: url(/static/css/image/tema.jpg);
+    display: inline-block;
+   }
+div.posts{
+    
+    min-height: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: 0px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+h1 {
+    border: 2px #eee solid;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+h2 {
+    border: 0px #eee;
+    color: black;
+    text-align: left;
+    padding: 12px;
+    font-size:13px;
+}
+h3 {
+    border: 2px #eee solid;
+    color: black;
+    text-align: right;
+    padding: 12px;
+    font-size:15px;
+    }
+h4{
+    border: 1px rgb(12, 11, 11) ;
+    background-color: none;
+    color: red;
+    text-align: center;
+    padding: 12px;
+    font-size:20px;
+   
+}
+p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    }
+
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+ 
+ul {
+    margin: 0;
+    padding:0;
+}
+ 
+li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: #903;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+}
+form{
+    border: 1px #eee solid;
+    width: 520px;
+    margin: 0px;
+    height: 420px;
+    text-align: left;
+    padding: 40px;
+    font-size: 12px;
+    font-family: Verdana, Tahoma, sans-serif;
+    size: 50px;
+    display:inline-block;
+      }
+label {
+    border:0px solid #999;
+    outline: 0;
+    width: 420px;
+    text-align:left;
+    display: inline-block;
+        }
+input{
+    border:1px solid #999;
+    width: 420px;
+    text-align: left;
+    display: inline-block;
+    
+      }
+
+input[type=submit]:hover{
+    padding: 0px;
+    width: 420px;
+    height: 100px;
+    resize: none;
+    outline: 0px;
+    border: 1px solid #999;
+    display: inline-block;
+     }
+textarea {
+    padding: 1px;
+    width: 420px;
+    height: 100px;
+    margin: 1px;
+    text-align: left;
+    resize: none;
+    outline: 0;
+    border: 1px solid #999;;
+    display: inline-block;
+    
+
+      }
+textarea2 {
+    padding: 2px;
+    width: 520px;
+    height: 0px;
+    margin: 0px;
+    text-align: left;
+    resize: none;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+         }
+
+  </style>
+ <!-- Fim CSS interno.-->
+
+  <title>Banco de Dados Público sobre Violência. </title>
+
+</head>
+
+<body>
+  
+  <div>
+    <ul>
+      <li><a href="{{url_for('sobre')}}">Sobre</a></li>
+      <li><a href="{{url_for('create')}}">Novo Registro</a></li>
+      <li><a href="{{url_for('busca')}}">Busca</a></li>
+      <li><a href="{{url_for('logout')}}">Sair</a></li>
+
+    </ul>
+  </div>
+
+  <div class=".posts">  
+
+  <h1> Banco de Dados Público sobre Violência.</h1>
+  
+  <h4>{{ posts[2] }}</h4>
+  
+  <h3> Dossie Nº: {{posts[0]}}</h3>
+
+  
+  {% for message in get_flashed_messages() %}
+  <h4>{{ message }}</h4>
+  {% endfor %} 
+    
+    <hr>
+
+    <span class="badge badge-primary">Anexado em :{{ posts[1] }}</span>
+    
+        <h2>{{ posts[0] }}</h2>
+        <h2>Nome:<hr> {{ posts[2] }}</h2>
+        <h2>Data de Nascimento: <hr> {{ posts[3] }}</h2>
+        <h2>Endereço: <hr> {{ posts[4] }}</h2>
+        <h2>Grupo de Violação: <hr>{{ posts[5] }}</h2>
+        <h2>Observações: <hr>{{ posts[6] }}</h2> 
+       
+    <hr>
+  </div>
+    </body>
+    </html>

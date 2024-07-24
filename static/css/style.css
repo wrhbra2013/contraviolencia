@@ -1,0 +1,194 @@
+
+html,body{
+min-width: auto;
+min-height: 100%;
+padding: 10px;
+margin: 2px;
+border: 0px;
+color: black;
+text-align: center;
+background-color: white;
+background-image: url(/static/css/image/tema.jpg);
+display: inline-block;
+}
+div.post_id{
+    
+    min-height: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: 0px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    background-image: url(image/tema.jpg);
+    display: inline-block;
+}
+div.posts{
+    min-height: 100%;
+    padding: 10px;
+    margin: 2px;
+    border: 0px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    background-image: url(image/tema.jpg);
+    display: inline-block;
+}
+h1 {
+    border: 2px #eee solid;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+h2 {
+    border: 2px #eee solid;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    font-size:18px;
+}
+h3 {
+    border: 2px #eee solid;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    font-size:15px;
+    }
+h4{
+    border: 1px rgb(12, 11, 11) ;
+    background-color: none;
+    color: red;
+    text-align: center;
+    padding: 12px;
+    font-size:15px;
+   
+}
+p{
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    }
+
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+ 
+ul {
+    margin: 0;
+    padding:0;
+}
+ 
+li {
+    list-style: none; 
+    margin: 10px;
+    display: inline;
+}
+li a {
+    width: auto;
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid #f00; 
+    background: #903;
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+}
+form{
+    border: 1px #eee solid;
+    width: 100 px;
+    margin: 0px;
+    height: 220px;
+    text-align: left;
+    padding: 40px;
+    font-size: 12px;
+    font-family: Verdana, Tahoma, sans-serif;
+    size: 50px;
+    display:inline-block;
+      }
+label {
+    border:0px solid #999;
+    outline: 0;
+    width: 100px;
+    text-align:left;
+    display: inline-block;
+        }
+input{
+    border:1px solid #999;
+    width: 180px;
+    text-align: left;
+    display: inline-block;
+    
+      }
+
+input[type=submit]:hover{
+    padding: 0px;
+    width: 120px;
+    height: 100px;
+    resize: none;
+    outline: 0px;
+    border: 1px solid #999;
+    display: inline-block;
+     }
+textarea {
+    padding: 1px;
+    width: 180px;
+    height: 80px;
+    margin: 1px;
+    text-align: left;
+    resize: none;
+    outline: 0;
+    border: 1px solid #999;;
+    display: inline-block;
+    
+
+      }
+textarea2 {
+    padding: 2px;
+    width: auto;
+    height: 0px;
+    margin: 0px;
+    text-align: left;
+    resize: none;
+    outline: 0;
+    border: 0;
+    display: inline-block;
+         }
+
+table {
+    border: 0;
+    display: inline-block;
+    padding: 0px;
+    width: auto;
+    height: 100px;
+    margin: 0px;
+    text-align: left;
+    font-size:16px;
+        }
+ span {
+       background-color: none;
+       color: blueyellow;
+       padding: 5px;
+       font-weight: normal;
+        }
+
+
+footer{
+    padding: auto;
+    border: 2px solid whitesmoke; 
+    width: auto;
+    height: 10px;
+    margin:0px;
+    display: inline;
+    color: #000
+    }
